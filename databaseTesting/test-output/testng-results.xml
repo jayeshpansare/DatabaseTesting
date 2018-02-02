@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2177" started-at="2018-02-02T17:02:31Z" finished-at="2018-02-02T17:02:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2177" started-at="2018-02-02T17:02:31Z" finished-at="2018-02-02T17:02:33Z">
+      <class name="databaseTesting.databaseTesting">
+        <test-method status="PASS" signature="dataTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:databaseTesting.databaseTesting@13a4b84]" name="dataTest" duration-ms="329" started-at="2018-02-02T22:32:33Z" data-provider="exceldata" finished-at="2018-02-02T22:32:33Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+            <param index="4">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTest -->
+        <test-method status="PASS" signature="dataTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:databaseTesting.databaseTesting@13a4b84]" name="dataTest" duration-ms="29" started-at="2018-02-02T22:32:33Z" data-provider="exceldata" finished-at="2018-02-02T22:32:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[select]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[select * from wp_posts]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[post_title]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello world!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTest -->
+        <test-method status="PASS" signature="dataTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:databaseTesting.databaseTesting@13a4b84]" name="dataTest" duration-ms="27" started-at="2018-02-02T22:32:33Z" data-provider="exceldata" finished-at="2018-02-02T22:32:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[select]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SELECT * FROM wp_posts left join wp_postmeta on wp_posts.ID=wp_postmeta.post_id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[post_title]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Hello world!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTest -->
+        <test-method status="PASS" signature="dataTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:databaseTesting.databaseTesting@13a4b84]" name="dataTest" duration-ms="24" started-at="2018-02-02T22:32:33Z" data-provider="exceldata" finished-at="2018-02-02T22:32:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[select]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SELECT * FROM wp_posts right join wp_postmeta on wp_posts.ID=wp_postmeta.post_id]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[post_content]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[example page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTest -->
+        <test-method status="FAIL" signature="dataTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:databaseTesting.databaseTesting@13a4b84]" name="dataTest" duration-ms="49" started-at="2018-02-02T22:32:33Z" data-provider="exceldata" finished-at="2018-02-02T22:32:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[insert]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[INSERT INTO wp_options(option_id, option_name, option_value) VALUES ('358','test2','test2')]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[-]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[No parameters defined during prepareCall()]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: No parameters defined during prepareCall()at com.mysql.jdbc.ServerPreparedStatement.getBinding(ServerPreparedStatement.java:1168)at com.mysql.jdbc.ServerPreparedStatement.setString(ServerPreparedStatement.java:560)at databaseTesting.databaseTesting.dataTest(databaseTesting.java:49)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTest -->
+        <test-method status="PASS" signature="dataTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:databaseTesting.databaseTesting@13a4b84]" name="dataTest" duration-ms="18" started-at="2018-02-02T22:32:33Z" data-provider="exceldata" finished-at="2018-02-02T22:32:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[select]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[select * from wp_options where option_id='98']]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[option_name]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataTest -->
+      </class> <!-- databaseTesting.databaseTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
